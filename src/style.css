@@ -1,7 +1,16 @@
 .swiper {
-    width: 532px;
-    height: 344.59px;
-    
-  }
+  width: 532px;
+  height: 344.59px;
+}
 
- 
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  display: none;
+}
+
+.faq-answer.open {
+  display: block;
+  max-height: 300px;
+}
